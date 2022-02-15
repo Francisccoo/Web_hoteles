@@ -1,0 +1,142 @@
+/* RESETEO DE ESTILOS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: Socialico;
+    src: url("../fonts/socialico/Socialico.woff") format("woff"), url("../fonts/socialico/Socialico.ttf") format("truetype"),
+        url("../fonts/socialico/Socialico.eot") format("eot"), url("../fonts/socialico/Socialico.ot") format("opentype");
+}
+
+.font-type-socialico {
+    font-family: Socialico;
+}
+
+.upperCase {
+
+    text-transform: uppercase;
+}
+
+/* ESTILOS - FONDO DE COLOR */
+
+.bgColorDarkBlue {
+    background-color: #052a3d;
+}
+
+.bgColorBlackOp5 {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ESTILOS - CABECERA */
+
+header {
+    width: 100%;
+    z-index: 1;
+}
+
+div img {
+    width: 10%;
+}
+
+/* ESTILOS - FILA */
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* ESTILOS - IMAGENES */
+
+figure {
+    width: 100%;  
+    height: 60vh;  
+}
+
+.bgImage {
+    background-image: url('../img/lisboa.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgSection {
+    width: 100%;
+    height: 50vh;
+}
+
+/* ESTILOS - FORMULARIO */
+
+form {
+    width: 30%;    
+    border: 1px solid #9E9E9E;
+}
+
+.form-control {    
+    margin-top: 1.5rem;
+}
+
+/* ESTILOS - ENLACES */
+
+.active {
+    color: #85b1be;
+    border-bottom: 3px solid;
+}
+
+a {
+    color: #85b1be;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* ESTILOS - CONTENEDOR */
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* ESTILOS - OCULTO */
+
+.hidden {
+    display: none;
+}
+
+/* ESTILOS - FUENTES */
+
+.fontSizeSmall {
+    font-size: 1.5rem;
+}
+
+.fontSizeExtraLarge {
+    font-size: 3.5rem;
+}
+
+/* ESTILOS - ESPACIADO INTERIOR */
+
+.paddingTop12 {
+    padding-top: 12rem;
+}
+
+.paddingBottom12 {
+    padding-bottom: 12rem;
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+    width: 100%;
+    height: 25vh;
+}
+
+/*PROPIEDADES*/
+
+button[disabled="true"] {
+    cursor: not-allowed;
+}

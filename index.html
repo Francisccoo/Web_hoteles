@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <header class="row bgColorBlackOp5 position-fixed">
+            <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                <img class="logoImg" src="img/logo.png" alt="Logo">
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                <ul class="nav upperCase">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- SLIDER GALLERY -->
+        <section class="row">
+            <figure class="bgImage">
+                <h1 class="font-weight-bold text-white fontSizeExtraLarge">Prepara tus vacaciones</h1>
+                <p class="text-white text-center fontSizeSmall">Disfruta de nuestros hoteles por 120€ la noche en: <br /> Madrid, Lisboa,
+                    Nueva York o Santiago</p>
+            </figure>
+        </section>
+        <!-- FORM -->
+        <section class="row justify-content-center pt-4 pb-4">
+            <form>
+                <div class="form-group p-3">
+                    <label for="exampleFormControlInput1" class="font-weight-bold text-black-50">¿Cuántas noches?</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group p-3">
+                    <label for="exampleFormControlSelect1" class="font-weight-bold text-black-50">Destino:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Lisboa</option>
+                        <option>Madrid</option>
+                        <option>Nueva York</option>
+                        <option>Santiago</option>
+                    </select>
+                </div>
+                <div class="form-group p-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="calcular()">Precio</button>
+                </div>
+            </form>
+        </section>
+        <!-- DESTINATION RESULT -->
+        <section id="destino" class="row justify-content-center pt-4 pb-4 hidden">
+            <div class="col-lg-12 pt-4 pb-4">
+                <h2 class="font-weight-bold text-black text-center">TU OFERTA FINAL</h2>
+                <p class="text-black-50 text-center">Este es el precio de tus vacaciones</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end;">
+                <!-- <img class="imgSection" src="img/lisboa.jpg" alt="Lisboa"> -->
+                <img id="imgSection" src="" alt="Imagen destino">
+            </div>
+            <div class="col-md-6">
+                <h2 class="font-weight-bold text-black">Tu destino - <span id="ciudad"></span></h2>
+                <p class="text-black">Por solo <span id="precioTotal"></span></p>
+                <p class="text-black"><span id="nochesTotal"></span></p>
+                <button type="button" id="downloadPDF" disabled="true" class="btn btn-warning">Descargar en PDF</button>
+            </div>
+        </section>
+        <!-- LOCATION MAP -->
+        <section id="mapa" class="row hidden">
+            <div id="mapaCiudad" class="col-lg-12">
+                <!-- EL MAPA DE GOOGLE CON LA CIUDAD DE DESTINDO SE CARGA AQUÍ MEDIANTE JS! -->
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="row bgColorDarkBlue flex-column justify-content-center align-items-center">
+            <ul class="nav font-type-socialico">
+                <li class="nav-item">
+                    <a class="nav-link fontSizeExtraLarge" href="#">f</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fontSizeExtraLarge" href="#">t</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fontSizeExtraLarge" href="#">i</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>   
+</body>
+
+</html>
